@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+<!--
+        <template id="listing">
+          <ul>
+            <li t-foreach="objects" t-as="object">
+              <a t-attf-href="#{ root }/objects/#{ object.id }">
+                <t t-esc="object.display_name"/>
+              </a>
+            </li>
+          </ul>
+        </template>
+        <template id="object">
+          <h1><t t-esc="object.display_name"/></h1>
+          <dl>
+            <t t-foreach="object._fields" t-as="field">
+              <dt><t t-esc="field"/></dt>
+              <dd><t t-esc="object[field]"/></dd>
+            </t>
+          </dl>
+        </template>
+-->
+      <template id="assets_frontend" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+        <!-- points 2 & 3 go here /-->
+        </xpath>
+      </template>
+      <link href="/academy/static/src/css/academy.css" rel="stylesheet" type="text/css"/>
+      <link href="/academy/static/src/scss/academy.scss" rel="stylesheet" type="text/scss"/>
+      <script src="/academy/static/src/js/academy.js" type="text/javascript" />
+    </data>
+</odoo>
